@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="listaTelefonica">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular</title>
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/angular.js"></script>
+  </head>
+  <body>
+
+    <div class="root" ng-controller="listaTelefonicaController">
+      <h1>{{titulo}}</h1>
+    </div>
+
+    <script>
+      var app = angular.module("listaTelefonica", []);
+
+      app.controller("listaTelefonicaController", function($scope) {
+        $scope.titulo = "Lista Telefônica";
+      })
+    </script>
+
+  </body>
+</html>

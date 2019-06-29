@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo - Jquery</title>
+
+    <script src="scripts/jquery.js"></script>
+  </head>
+  <body>
+
+    <div id="root">
+      <h1>Onde você quer ir?</h1>
+       <p>Planeje sua próxima aventura.</p>
+
+       <ul id="destinos">
+        <li>Roma</li>
+        <li>Paris</li>
+        <li class='promo'>Rio</li>
+      </ul>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        // Trecho 01
+        $("h1").text("Para onde?");
+
+        // Trecho 02
+        // $("li").text("Orlando");
+
+        // Trecho 02
+        // $("li.promo").text("Orlando");
+
+        //Trecho 04
+        // for(let i = 0; i < 10000; i++) {
+        //   $('#root').append($('<div />').addClass('test-div'));
+        // }
+
+        // Trecho 05 - VanillaJS
+        // const c = document.createDocumentFragment();
+        // for(let i = 0; i < 10000; i++) {
+        //   const e = document.createElement('div');
+        //   e.className = 'test-div';
+        //   c.appendChild(e);
+        // }
+        // document.getElementById('root').appendChild(c);
+      })
+    </script>
+
+  </body>
+</html>
